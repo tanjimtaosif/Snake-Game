@@ -143,3 +143,21 @@ section {
 .btn:hover {
   transform: scale(1.1);
 }
+.final-stats {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: var(--space-md);
+  border-radius: var(--redius-md);
+  margin: var(--space-md) 0;
+}
+
+.final-stats p {
+  font-size: 1.1rem;
+  color: var(--text-primary-color);
+  margin: var(--space-xs) 0;
+}
+
+.final-stats span {
+  font-weight: bold;
+  color: var(--bg-fill-color);
+}
