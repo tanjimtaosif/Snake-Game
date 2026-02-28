@@ -13,7 +13,8 @@ body {
 :root {
   /* Background Color */
   --bg-primary-color: #0c0c0c;
-  --bg-fill-color: #c42929;
+  --bg-fill-color: #229f34;
+  --bg-food-color: #f54242;
 
   /* Text Color */
   --text-primary-color: #f0f0f0;
@@ -98,6 +99,47 @@ section {
   border: 1px solid var(--border-primary-color);
 }
 
-.fill{
+.fill {
   background-color: var(--bg-fill-color);
+}
+
+.food {
+  background-color: var(--bg-food-color);
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(5px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .start-game,
+.modal .game-over {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.modal .game-over {
+  display: none;
+}
+
+.btn {
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  border-radius: var(--redius-sm);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }
